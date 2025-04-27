@@ -1,0 +1,318 @@
+/* basics instrument*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+body {
+  padding: 20px;
+}
+
+/* header for all pages*/
+header {
+  width: 100%;
+  height: 100%;
+}
+
+#divHeader {
+  width: 100%;
+  height: 90px;
+  margin: 40px 0px 90px 0px;
+}
+#logo {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+#UPS {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  max-width: 400px;
+  height: 100%;
+  float: right;
+}
+#navdiv {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
+
+.navigationButtons {
+  text-align: center;
+  width: 33.33%;
+  height: 100%;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+#welcomeText1 {
+  max-width: 65%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+#welcomeText2 {
+  max-width: 70%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+h3 {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+.navigationLine {
+  margin-top: 10px;
+  width: 100%;
+  height: 70px;
+}
+.navigationBar {
+  width: 100%;
+  height: 40px;
+  background-color: hsl(187, 100%, 85%);
+  border: 1px solid rgb(0, 238, 255);
+}
+#navigationBarStep1 {
+  width: 7%;
+  height: 100%;
+  float: left;
+  background-color: hsl(214, 98%, 52%);
+}
+#navigationBarStep2 {
+  width: 15%;
+  height: 100%;
+  float: left;
+  background-color: hsl(214, 98%, 52%);
+}
+#navigationBarStep3 {
+  width: 40%;
+  height: 100%;
+  float: left;
+  background-color: hsl(214, 98%, 52%);
+}
+#navigationBarStep4 {
+  width: 95%;
+  height: 100%;
+  float: left;
+  background-color: hsl(214, 98%, 52%);
+}
+
+/* footer for all pages*/
+footer {
+  width: 100%;
+  height: 60px;
+}
+.divFooter {
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  position: relative;
+}
+footer a {
+  width: 160px;
+  height: 50px;
+  background-color: hsl(0, 0%, 100%);
+
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border: 2px solid hsl(0, 0%, 0%);
+  text-align: center;
+  line-height: 50px;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+}
+footer a:hover {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+footer a:active {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(214, 100%, 77%);
+}
+
+/* main for  all pages*/
+.welcomeText3 {
+  margin-top: 5px;
+}
+
+/* main for page 1*/
+.addressForm {
+  width: 85%;
+  height: 100%;
+}
+input {
+  width: 150px;
+  height: 30px;
+  padding: 10px;
+  margin: 5px 0px 5px 0px;
+}
+.addressForm select {
+  width: 100px;
+  height: 30px;
+  margin: 5px 0px 5px 0px;
+}
+#description {
+  margin: 20px 0px 20px 0px;
+  max-width: 800px;
+  height: 120px;
+  display: flex;
+}
+#descriptionText {
+  width: 23%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  font-size: 1.2em;
+}
+#descriptionText p {
+  margin-top: 20px;
+  font-size: 0.6rem;
+}
+#descriptionText label {
+  font-size: 15px;
+  font-weight: 600;
+}
+#description textarea {
+  width: 100%;
+  height: 100%;
+}
+#billingShipping {
+  margin: 20px 0px;
+}
+#shippingAddressCheckbox:checked ~ #shippingAddressForm {
+  display: none;
+}
+
+/** main for page 2*/
+#email-phoneForm {
+  max-width: 900px;
+  height: 100%;
+  display: flex;
+  margin-bottom: 10px;
+}
+#emailForm {
+  max-width: 40%;
+  margin-right: 20px;
+}
+#emailForm div {
+  float: right;
+}
+.addressForm {
+  max-width: 550px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.addressForm > div {
+  width: 100%;
+  height: 100%;
+}
+.addressForm > div > div {
+  width: 270px;
+  height: 100%;
+  float: right;
+}
+
+#newsletterForm {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#newsletterForm label {
+  line-height: 38px;
+  font-weight: 600;
+}
+/** main for page 3*/
+#typeOfClothingForm {
+  max-width: 550px;
+  height: 140px;
+  display: flex;
+  margin: 20px 0px 20px 0px;
+}
+#typeOfClothingForm > div {
+  max-width: 50%;
+}
+#typeOfClothingForm > div > div {
+  float: right;
+}
+#brandschoice > div {
+  width: 200px;
+  height: 250px;
+}
+#brandschoice {
+  max-width: 880px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#brandschoice > div > img {
+  width: 200px;
+  height: 200px;
+}
+#brandschoice > div > img:hover {
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+#brandschoice > div > label {
+  font-weight: 700;
+}
+#brandschoice > div > div {
+  display: flex;
+  justify-content: flex-end;
+}
+/* main for page 4*/
+#paymentForm {
+  max-width: 900px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#paymentForm label {
+  font-weight: 600;
+}
+#paymentForm > div {
+  width: 350px;
+  height: 140px;
+}
+#cardDetails > div {
+  float: right;
+}
+#divFirstName {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#divFirstName > label {
+  margin: 10px;
+}
+#type_of_card {
+  width: 130px;
+  height: 30px;
+  margin: 10px;
+}
+#securedcodes > div > input {
+  width: 70px;
+}
+#securedcodes {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* test*/
