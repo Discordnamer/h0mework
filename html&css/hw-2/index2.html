@@ -16,7 +16,7 @@
         <nav>
           <div id="navdiv">
             <div class="navigationButtons">
-              <a href="index.html">⏪</a>
+              <a href="index1.html">⏪</a>
             </div>
             <div class="navigationButtons">
               <a href="index2.html">🔄</a>
@@ -48,31 +48,27 @@
             <input type="email" id="email" />
           </div>
           <div><label for="password">Password*</label>
-          <input type="password" id="password" />
+          <input type="text" id="password" minlength="10" pattern="[a-zA-Z]+" required/>
           </div>
           <div><label for="confirm_password">Confirm password*</label>
-            <input type="password" id="confirm_password" />
+            <input type="password" id="confirm_password" minlength="10" pattern="[a-zA-Z]+" required/>
           </div>
         </div>
         <div id="phoneForm">
           <label for="phone">Phone number</label>
-          <input type="tel" id="phone" />
+          <input type="tel" id="phone" placeholder="+45-178-412-78" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}+" maxlength="10" minlength="10" required/>
         </div>
+        <input type="submit">
       </form>
       <p>I want to sign up for the newsletter</p>
       <div id="newsletterForm">
         <label for="weekly_news">Weekly news</label>
-        <input type="radio" name="news"/>
+        <input type="radio" name="news" required/>
         <label for="monthly_news">Monthly news</label>
-        <input type="radio" name="news"/>
+        <input type="radio" name="news" required/>
         <label for="Don't_send_me_news">Don't send me news</label>
-        <input type="radio" name="news"/>
+        <input type="radio" name="news" required/>
       </div>
     </main>
-    <footer>
-      <div class="divFooter">
-        <a href="index4.html">Next step</a>
-      </div>
-    </footer>
   </body>
 </html>

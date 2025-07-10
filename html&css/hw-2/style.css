@@ -281,7 +281,7 @@ input {
 /* main for page 4*/
 #paymentForm {
   max-width: 900px;
-  height: 100%;
+  height: 300px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -291,6 +291,9 @@ input {
 #paymentForm > div {
   width: 350px;
   height: 140px;
+}
+#paymentForm > #input {
+  transform: translate(-300px, 110px);
 }
 #cardDetails > div {
   float: right;
