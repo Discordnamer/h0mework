@@ -112,39 +112,28 @@ h3 {
   background-color: hsl(214, 98%, 52%);
 }
 
-/* footer for all pages*/
-footer {
-  width: 100%;
-  height: 60px;
-}
-.divFooter {
-  width: 100%;
-  height: 100%;
-  margin: 0px 0px 0px 0px;
-  position: relative;
-}
-footer a {
-  width: 160px;
+/* submit or nexts step*/
+.btn {
+  width: 90%;
   height: 50px;
-  background-color: hsl(0, 0%, 100%);
-
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  border: 2px solid hsl(0, 0%, 0%);
-  text-align: center;
-  line-height: 50px;
-  font-weight: 700;
-  color: black;
+  margin: 0%;
+}
+.btn input:hover, .btn a:hover{
   cursor: pointer;
 }
-footer a:hover {
-  background-color: hsl(0, 0%, 0%);
-  color: hsl(0, 0%, 100%);
+.btn input, .btn a {
+  float: right !important;
+  color: black !important;
+  border: 2px solid gray;
+  border-radius: 5%;
+  background-color: rgb(5, 217, 255);
+  font-size: 30px !important;
+  width: 200px !important;
+  height: 50px !important;
 }
-footer a:active {
-  background-color: hsl(0, 0%, 0%);
-  color: hsl(214, 100%, 77%);
+.btn a{
+  text-align: center;
+  padding-top: 5px;
 }
 
 /* main for  all pages*/
@@ -152,16 +141,50 @@ footer a:active {
   margin-top: 5px;
 }
 
+
 /* main for page 1*/
 .addressForm {
   width: 85%;
   height: 100%;
 }
-input {
+
+.addresse {
+  margin: 1%;
+  border: 2px solid #ffffff;
+  padding: 2%;
+  max-width: 700px;
+  max-height: 400px;
+  display:block;
+}
+
+.addresse div{
+margin: 1%;
+display:inline-flex;
+height: 50px;
+width: 300px;
+}
+
+.addresse label, .addrese input, .addresse select {
+  font-size:20px;
+  display:block;
   width: 150px;
-  height: 30px;
-  padding: 10px;
-  margin: 5px 0px 5px 0px;
+  height: 100%;
+}
+.addresse label {
+  width: 200px !important;
+  font-size: 21px;
+  translate: 25px 14px;
+}
+
+.selectCountry {
+  width: 400px !important; 
+}
+
+#country {
+ width: 100px;
+}
+.streetAddress{
+  translate: 0px 14px !important;
 }
 .addressForm select {
   width: 100px;
@@ -192,66 +215,96 @@ input {
   width: 100%;
   height: 100%;
 }
-#billingShipping {
-  margin: 20px 0px;
+
+#shippingAddresslabel{
+  font-size: 25px;
+  display: block;
+  translate: 0px 18px;
 }
+#shippingAddressCheckbox {
+  width: 50px;
+  height: 60px;
+  translate: 200px -25px;
+}
+
 #shippingAddressCheckbox:checked ~ #shippingAddressForm {
   display: none;
 }
 
 /** main for page 2*/
 #email-phoneForm {
+  margin-right: 1%;
   max-width: 900px;
   height: 100%;
-  display: flex;
-  margin-bottom: 10px;
-}
-#emailForm {
-  max-width: 40%;
-  margin-right: 20px;
-}
-#emailForm div {
-  float: right;
-}
-.addressForm {
-  max-width: 550px;
-  height: 100%;
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
 }
-.addressForm > div {
-  width: 100%;
-  height: 100%;
-}
-.addressForm > div > div {
-  width: 270px;
-  height: 100%;
-  float: right;
-}
 
+#email-phoneForm > div {
+  display: block;
+  width: 400px;
+  height: 100%;
+}
+#email-phoneForm > div > div {
+  padding-right: 75px;
+  margin-bottom: 10px;
+  display: flex;
+  width: 400px;
+  height: 50px;
+}
+#email-phoneForm > div > div label, #email-phoneForm > div > div input{
+  width: 50%;
+}
+#email-phoneForm > div > div > label{
+  text-align: right;
+  translate: -5px 12px;
+}
 #newsletterForm {
   margin-top: 20px;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+#newsletterForm > div {
+  margin: 10px;
+  height: 40px;
+  width: 200px;
+}
+.newsletter {
+  translate: -60px 10px !important;
 }
 #newsletterForm label {
   line-height: 38px;
   font-weight: 600;
 }
+#newsletterForm input {
+  translate: -10px 10px;
+  float: right;
+width: 20px;
+height: 20px;
+}
+
 /** main for page 3*/
+#typeOfClothingForm > div > label {
+font-size: 30px;
+}
+#typeOfClothingForm > div  input {
+width: 25px;
+height: 25px;
+float: right;
+translate: -40px 5px;
+}
 #typeOfClothingForm {
   max-width: 550px;
-  height: 140px;
+  height: 100%;
   display: flex;
+  flex-wrap: wrap;
   margin: 20px 0px 20px 0px;
 }
 #typeOfClothingForm > div {
-  max-width: 50%;
-}
-#typeOfClothingForm > div > div {
-  float: right;
+  width: 250px;
 }
 #brandschoice > div {
   width: 200px;
@@ -271,8 +324,15 @@ input {
   transform: scale(0.9);
   transition: all 0.3s ease-in-out;
 }
-#brandschoice > div > label {
+#brandschoice label {
+  font-size: 25px;
   font-weight: 700;
+  margin-right: 40px;
+}
+#brandschoice input {
+  width: 25px;
+  height: 25px;
+  margin-right: 40px;
 }
 #brandschoice > div > div {
   display: flex;
@@ -280,28 +340,47 @@ input {
 }
 /* main for page 4*/
 #paymentForm {
-  max-width: 900px;
-  height: 100%;
+  max-width: 100%;
+  height: 300px;
   display: flex;
   flex-wrap: wrap;
 }
+#paymentForm input{
+  translate: -14px 0px;
+  float: right;
+  width: 130px;
+  font-size: 20px;
+}
 #paymentForm label {
+  font-size: 20px;
   font-weight: 600;
 }
 #paymentForm > div {
-  width: 350px;
-  height: 140px;
-}
-#cardDetails > div {
-  float: right;
+  width: 390px;
+  height: 300px;
 }
 #divFirstName {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  width: 820px !important;
+  max-height: 100% !important;
 }
-#divFirstName > label {
-  margin: 10px;
+#divFirstName input {
+  margin-left: 20px;
+  float: none;
+}
+#divFirstName > div {
+  width: 100%;
+  margin-top: 80px;
+}
+#paymentForm > div > div{
+  padding-top: 15px;
+  width: 100%;
+  height: 50px;
+}
+.backSideCard input {
+  float: none !important;
+width: 70px !important;
+font-size: 20px !important;
+translate: 0px 0px !important;
 }
 #type_of_card {
   width: 130px;
@@ -310,9 +389,5 @@ input {
 }
 #securedcodes > div > input {
   width: 70px;
-}
-#securedcodes {
-  display: flex;
-  flex-wrap: wrap;
 }
 /* test*/

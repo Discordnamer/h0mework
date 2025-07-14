@@ -42,7 +42,7 @@
         <div id="cardDetails">
           <div>
             <label for="name_on_card">Name on card</label>
-            <input type="text" id="name_on_card" /><br />
+            <input type="text" id="name_on_card" required/><br />
           </div>
           <div>
             <label for="type_of_card">Type of card</label>
@@ -53,31 +53,32 @@
           </div>
           <div>
             <label for="credit_card_number">Credit card number </label>
-            <input type="text" id="credit_card_number" />
+            <input type="tel" id="credit_card_number" minlength="16" maxlength="16" pattern="[0-9]{16}" required/>
+          </div>
+          <div class="backSideCard">
+            <label for="expiry_month">Expiry month</label>
+            <input type="tel" id="expiry_month" required/>
+            <label for="expiry_year">Expiry year</label>
+            <input type="tel" id="expiry_year" required/>
+          </div>
+          <div class="backSideCard">
+            <label for="">CCV</label>
+            <input type="tel" maxlength="3" pattern="[0-9]{3}" required/>
+          </div>
           </div>
         </div>
         <div id="divFirstName">
-          <label for="first_name">first name</label>
-          <input type="text" id="first_name" />
-        </div>
-
-        <div id="securedcodes">
           <div>
-            <label for="expiry_month">Expiry month</label>
-            <input type="number" id="expiry_month" />
+            <label for="first_name">first name</label>
+          <input type="text" id="first_name" required/>
           </div>
-          <div>
-            <label for="expiry_year">Expiry year</label>
-            <input type="number" id="expiry_year" />
+          <div class="btn">
+            <input type="submit" value="next step">
           </div>
-          <div><label for="">CCV</label> <input type="number" /></div>
         </div>
+     
       </form>
     </main>
-    <footer>
-      <div class="divFooter">
-        <a href="index4.html">Next step</a>
-      </div>
-    </footer>
+    
   </body>
 </html>
