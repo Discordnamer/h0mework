@@ -42,33 +42,51 @@
         We will probably need to stay in touch somehow. Let is know how we can
         reach you?
       </p>
-      <form id="email-phoneForm">
-        <div id="emailForm">
-          <div><label for="email">Email*</label>
-            <input type="email" id="email" />
+      <form action="index3.html">
+        <div id="email-phoneForm">
+          <div id="emailForm">
+            <div>
+              <label for="email">Email*</label>
+              <input type="email" id="email" required/>
+            </div>
+            <div>
+              <label for="password">Password*</label>
+              <input type="text" id="password" minlength="10" pattern="[a-zA-Z]+" required/>
+            </div>
+            <div>
+              <label for="confirm_password">Confirm password*</label>
+              <input type="password" id="confirm_password" minlength="10" pattern="[a-zA-Z]+" required/>
+            </div>
           </div>
-          <div><label for="password">Password*</label>
-          <input type="text" id="password" minlength="10" pattern="[a-zA-Z]+" required/>
-          </div>
-          <div><label for="confirm_password">Confirm password*</label>
-            <input type="password" id="confirm_password" minlength="10" pattern="[a-zA-Z]+" required/>
+          <div id="phoneForm">
+            <div>
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" placeholder="+45-178-412-78" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}+" maxlength="10" minlength="10" required/>
+            </div>
           </div>
         </div>
-        <div id="phoneForm">
-          <label for="phone">Phone number</label>
-          <input type="tel" id="phone" placeholder="+45-178-412-78" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}+" maxlength="10" minlength="10" required/>
+        
+        
+        <p>I want to sign up for the newsletter</p>
+        <div id="newsletterForm">
+          <div>
+            <label for="weekly_news">Weekly news</label>
+            <input type="radio" name="news" required class="newsletter"/>
+          </div>
+          <div>
+            <label for="monthly_news">Monthly news</label>
+            <input type="radio" name="news" required class="newsletter"/>
+          </div>
+          <div>
+            <label for="Don't_send_me_news">Don't send me news</label>
+            <input type="radio" name="news" required/>
+          </div>
         </div>
-        <input type="submit">
+        <div class="btn">
+          <input type="submit" value="next step">
+        </div>
       </form>
-      <p>I want to sign up for the newsletter</p>
-      <div id="newsletterForm">
-        <label for="weekly_news">Weekly news</label>
-        <input type="radio" name="news" required/>
-        <label for="monthly_news">Monthly news</label>
-        <input type="radio" name="news" required/>
-        <label for="Don't_send_me_news">Don't send me news</label>
-        <input type="radio" name="news" required/>
-      </div>
+      
     </main>
   </body>
 </html>

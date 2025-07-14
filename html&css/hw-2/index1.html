@@ -51,19 +51,17 @@
         Nice to meet you. Let’s spend a minute to get to know each other? Please
         enter the following:
         </p>
-        <form action="addresseForm">
-            <div id="addresse">
-                <div class="container-firstNameLastName">
-                    <div>
-                        <label for="first_name">First name*</label>
-                        <input type="text" id="first_name" required/>
-                    </div>
-                    <div>
-                        <label for="last_name">Last name*</label>
-                        <input type="text" id="last_name" required/>
-                    </div>
+        <form action="index2.html">
+            <div class="addresse">
+                <div>
+                    <label for="first_name">First name*</label>
+                    <input type="text" id="first_name" required/>
+                </div>    
+                <div>
+                    <label for="last_name">Last name*</label>
+                    <input type="text" id="last_name" required/>
                 </div>
-                <div class="container-country">
+                <div class="selectCountry">
                     <label for="country">Country*</label>
                     <select name="country" id="country">
                         <option value="denmark">Denmark</option>
@@ -71,15 +69,13 @@
                         <option value="germany">Germany</option>
                     </select>
                 </div>
-                <div class="container-streetAddressPostCode">
-                    <div>
-                        <label for="street_address">Street address*</label>
-                        <input type="text" id="street_address" required/>
-                    </div>
-                    <div>
-                        <label for="post_code">Post code*</label>
-                        <input type="num" id="post_code" maxlength="4" minlength="4" required/>
-                    </div>
+                <div>
+                    <label for="street_address" class="streetAddress">Street address*</label>
+                    <input type="text" id="street_address" required/>
+                </div>
+                <div>
+                    <label for="post_code">Post code*</label>
+                    <input type="num" id="post_code" maxlength="4" minlength="4" required/>
                 </div>
             </div>
             <div id="description">
@@ -96,21 +92,19 @@
                 Use the same address for billing and shipping? Uncheck below to fill out
                 a separate shipping address.
             </p>
-            <label for="shipping_address">Shipping address</label>
+            <label for="shipping_address" id="shippingAddresslabel">Shipping address</label>
             <input type="checkbox" id="shippingAddressCheckbox"/>
 
-            <div class="addressForm" id="shippingAddressForm">
-                <div class="container-firstNameLastName">
-                    <div>
-                        <label for="first_name">First name*</label>
-                        <input type="text" id="first_name" />
-                    </div>
-                    <div>
-                        <label for="last_name">Last name*</label>
-                        <input type="text" id="last_name"/>
-                    </div>
+            <div class="addresse" id="shippingAddressForm">
+                <div>
+                    <label for="first_name">First name*</label>
+                    <input type="text" id="first_name" />
+                </div>    
+                <div>
+                    <label for="last_name">Last name*</label>
+                    <input type="text" id="last_name" />
                 </div>
-                <div class="container-country">
+                <div class="selectCountry">
                     <label for="country">Country*</label>
                     <select name="country" id="country">
                         <option value="denmark">Denmark</option>
@@ -118,19 +112,18 @@
                         <option value="germany">Germany</option>
                     </select>
                 </div>
-                <div class="container-streetAddressPostCode">
-                    <div>
-                        <label for="street_address">Street address*</label>
-                        <input type="text" id="street_address" />
-                    </div>
-                    <div>
-                        <label for="post_code">Post code*</label>
-                        <input type="num" id="post_code" maxlength="4" minlength="4"/>
-                    </div>
+                <div>
+                    <label for="street_address" class="streetAddress">Street address*</label>
+                    <input type="text" id="street_address" />
+                </div>
+                <div>
+                    <label for="post_code">Post code*</label>
+                    <input type="num" id="post_code" maxlength="4" minlength="4" />
                 </div>
             </div>
-            <a href="index2.html"><input type="submit" ></a>
-            
+            <div class="btn">
+                <input type="submit" value="next step">
+            </div>
         </form>
     </main>
   </body>

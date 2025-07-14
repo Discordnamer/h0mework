@@ -55,25 +55,28 @@
             <label for="credit_card_number">Credit card number </label>
             <input type="tel" id="credit_card_number" minlength="16" maxlength="16" pattern="[0-9]{16}" required/>
           </div>
-        </div>
-        <div id="divFirstName">
-          <label for="first_name">first name</label>
-          <input type="text" id="first_name" required/>
-        </div>
-
-        <div id="securedcodes">
-          <div>
+          <div class="backSideCard">
             <label for="expiry_month">Expiry month</label>
             <input type="tel" id="expiry_month" required/>
-          </div>
-          <div>
             <label for="expiry_year">Expiry year</label>
             <input type="tel" id="expiry_year" required/>
           </div>
-          <div><label for="">CCV</label> <input type="tel" maxlength="3" pattern="[0-9]{3}" required/></div>
+          <div class="backSideCard">
+            <label for="">CCV</label>
+            <input type="tel" maxlength="3" pattern="[0-9]{3}" required/>
+          </div>
+          </div>
         </div>
-        <div id="input"><input type="submit"></div>
-        
+        <div id="divFirstName">
+          <div>
+            <label for="first_name">first name</label>
+          <input type="text" id="first_name" required/>
+          </div>
+          <div class="btn">
+            <input type="submit" value="next step">
+          </div>
+        </div>
+     
       </form>
     </main>
     
